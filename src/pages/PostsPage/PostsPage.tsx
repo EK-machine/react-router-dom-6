@@ -13,7 +13,10 @@ const PostsPage: React.FC = () => {
   return (
     <section className={styles.section}>
       <div className={styles.pageContainer}>
-        <h1 className={styles.heading}>PostsPage</h1>
+        <h1 className={styles.heading}>Posts Page</h1>
+        <Link className={styles.btn} to={`/posts/new`}>
+          Add new post
+        </Link>
         {posts
           ? posts.map((post) => (
               <Link key={post.id} to={`/posts/${post.id}`}>

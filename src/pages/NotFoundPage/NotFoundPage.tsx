@@ -7,7 +7,7 @@ const NotFoundPage: React.FC = () => {
     <section className={styles.section}>
       <div className={styles.pageContainer}>
         <h1 className={styles.heading}>The page was not found</h1>
-        <Link className={styles.return} to="/">
+        <Link className={styles.btn} to="/">
           Return to home page
         </Link>
       </div>

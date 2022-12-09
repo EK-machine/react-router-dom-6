@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .navlink {
@@ -21,4 +22,14 @@
 .navlink:last-child,
 .navlinkActive:last-child {
   margin-right: 0px;
+}
+
+.btnBack {
+  position: absolute;
+  left: 16px;
+}
+
+.btnForward {
+  position: absolute;
+  right: 16px;
 }
