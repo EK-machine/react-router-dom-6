@@ -1,0 +1,18 @@
+.section {
+  width: 100%;
+}
+
+.pageContainer {
+  margin: 0 auto;
+  max-width: 1230px;
+  padding: 24px;
+}
+
+.heading {
+  text-align: center;
+  margin: 0 0 24px 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
