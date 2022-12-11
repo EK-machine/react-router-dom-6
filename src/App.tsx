@@ -17,7 +17,11 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="about" element={<AboutPage />} />
+          <Route path="about/*" element={<AboutPage />}>
+            <Route path="contacts" element={<p>Our Contacts</p>} />
+            <Route path="team" element={<p>Our team</p>} />
+            <Route path="address" element={<p>Our address</p>} />
+          </Route>
           {/* to redirect to current route if the old one is depricated */}
           <Route path="about-us" element={<Navigate to="/about" replace />} />
           <Route path="posts" element={<PostsPage />} />
