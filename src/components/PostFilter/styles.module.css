@@ -1,0 +1,14 @@
+.search {
+  margin-right: 16px;
+}
+
+.btn {
+  border: 1px solid rgb(66, 64, 64);
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: rgb(134, 123, 123);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 24px;
+}

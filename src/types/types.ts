@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { NavigateFunction } from "react-router-dom";
+import { NavigateOptions, URLSearchParamsInit } from "react-router-dom";
 
 export interface PostBody {
   userId: number;
@@ -28,3 +28,20 @@ export interface ContextType {
   signIn: ContextSignInType;
   signOut: () => void;
 }
+
+export interface SearchParamsType {
+  post: string;
+  latest: boolean;
+}
+
+declare type SetURLSearchParams = (nextInit?: URLSearchParamsInit | ((prev: URLSearchParams) => URLSearchParamsInit), navigateOpts?: NavigateOptions) => void;
+
+export interface PostFilterProps {
+  setSearchParams: SetURLSearchParams;
+  postQuery: string;
+  latest: boolean;
+}
+
+
+
+
