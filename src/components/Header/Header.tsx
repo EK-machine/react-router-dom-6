@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       <NavLink className={actNav} to="/about">
         About
       </NavLink>
-      {user && <button onClick={() => signOut()}>Sign out</button>}
+      {user && <Btn text={"Sign out"} extraClassName={styles.btnSignOut} onClick={() => signOut()} />}
     </header>
   );
 };
